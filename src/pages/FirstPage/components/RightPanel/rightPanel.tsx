@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Table, Space } from 'antd';
 import './rightPanel.less';
 import Counter from '../../../../components/Counter/counter';

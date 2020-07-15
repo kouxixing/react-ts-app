@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import './pageHeader.less';
-import { Menu, Dropdown, Button } from 'antd';
+import { Menu, Dropdown } from 'antd';
 import { FundTwoTone, PieChartOutlined, RadarChartOutlined, BulbOutlined, CloudSyncOutlined, DownOutlined,MenuUnfoldOutlined } from '@ant-design/icons';
 
 interface Prop{
@@ -33,9 +33,9 @@ function Header(props: Prop) {
                 <BulbOutlined className="iconStyle" />
                 <CloudSyncOutlined className="iconStyle" />
                 <Dropdown overlay={menu}>
-                    <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+                    <span className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                         admin <DownOutlined />
-                    </a>
+                    </span>
                 </Dropdown>
             </div>
         </div>

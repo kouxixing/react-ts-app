@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 
 import { decrement, increment, init } from '../../store/actions';
-import { StoreState } from '../../store/type';
 
 
 // 创建类型接口
