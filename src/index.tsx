@@ -11,6 +11,7 @@ const store = createStore(reducer);
 
 const First = lazy(() => import('./pages/FirstPage'));
 const Login = lazy(() => import('./pages/Login/login'));
+const Detail = lazy(() => import('./pages/DetailPage'));
 ReactDOM.render(
   <Provider store={store}>
     <Router>
@@ -18,6 +19,8 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/" component={(props: any) => <Login {...props} />} />
           <Route path="/first" component={(props: any) => <First {...props} />} />
+          <Route path="/detail" component={(props: any) => <Detail {...props} />} />
+          
         </Switch>
       </Suspense>
     </Router>
